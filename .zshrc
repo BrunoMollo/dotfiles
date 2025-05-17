@@ -1,6 +1,7 @@
 export PATH="$HOME/.local/bin:$PATH"
 
-alias vim=lvim
+alias vim="lvim"
+alias cls="clear"
 
-alias hi='echo hello'
+eval "$(starship init zsh)"
 
