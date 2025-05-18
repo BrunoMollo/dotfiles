@@ -1,20 +1,9 @@
+# .zshrc
 
-# Varibles
-export PATH="$HOME/.local/bin:$PATH"
-export EDITOR="nvim"
-export XDG_CONFIG_HOME="$HOME/.config"
-alias cd='z'
-alias ci='zi'
-
-# Aliases
-alias vim="nvim"
-alias cls="clear"
-
+source $HOME/.profile
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(fnm env --use-on-cd --shell zsh)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-
-
 
