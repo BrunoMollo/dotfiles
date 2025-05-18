@@ -1,12 +1,12 @@
 
 # Varibles
 export PATH="$HOME/.local/bin:$PATH"
-export EDITOR="lvim"
+export EDITOR="nvim"
 alias cd='z'
 alias ci='zi'
 
 # Aliases
-alias vim="lvim"
+alias vim="nvim"
 alias cls="clear"
 
 
