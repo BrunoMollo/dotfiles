@@ -2,7 +2,7 @@ return {
   'nvim-tree/nvim-tree.lua',
   cmd = { 'NvimTreeToggle', 'NvimTreeFocus' }, -- Add commands to load the plugin
   keys = {
-    { '<leader>e', '<cmd>NvimTreeToggle<cr>', desc = 'Toggle NvimTree' },
+    { '<leader>e', '<cmd>NvimTreeFindFileToggle<cr>', desc = 'Toggle NvimTree' },
   },
   opts = {
     view = {
