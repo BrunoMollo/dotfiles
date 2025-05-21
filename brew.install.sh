@@ -36,6 +36,10 @@ packages=(
 
 	# Node specific
 	fnm
+	
+	# golang specific
+	go
+
 
 	# Gimics
 	neofetch
