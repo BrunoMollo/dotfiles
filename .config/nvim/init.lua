@@ -117,7 +117,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
 
-  { import = 'custom.plugins' },
+  { import = 'plugins.general' },
   { import = 'plugins.lsp' },
   { import = 'plugins.git' },
   { import = 'plugins.ui' },
