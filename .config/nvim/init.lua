@@ -121,6 +121,7 @@ require('lazy').setup({
   { import = 'plugins.lsp' },
   { import = 'plugins.git' },
   { import = 'plugins.ui' },
+  { import = 'plugins.ai' },
   { import = 'plugins.aesthetics' },
 }, {
   ui = {
