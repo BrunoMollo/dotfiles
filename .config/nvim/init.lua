@@ -119,6 +119,7 @@ require('lazy').setup({
 
   { import = 'custom.plugins' },
   { import = 'plugins.lsp' },
+  { import = 'plugins.git' },
   { import = 'plugins.aesthetics' },
 }, {
   ui = {
