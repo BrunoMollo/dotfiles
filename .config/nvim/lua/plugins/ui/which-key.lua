@@ -44,11 +44,12 @@ return { -- Useful plugin to show you pending keybinds.
 
     -- Document existing key chains
     spec = {
-      { '<leader>g', group = '[G]it' },
-      { '<leader>s', group = '[S]earch' },
-      { '<leader>t', group = '[T]oggle' },
-      { '<leader>h', group = '[H]arpoon' },
-      { '<leader>l', group = '[L]aravel' },
+      { '<leader>g', group = 'Git' },
+      { '<leader>s', group = 'Search' },
+      { '<leader>t', group = 'Toggle' },
+      { '<leader>h', group = 'Harpoon' },
+      { '<leader>l', group = 'Laravel' },
+      { '<leader>q', group = 'Quickfix list' },
     },
   },
 }

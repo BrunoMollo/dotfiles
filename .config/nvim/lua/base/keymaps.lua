@@ -1,14 +1,19 @@
 -- [[ Basic Keymaps ]]
+--  See `:help vim.keymap.set()`
 return {
   setup_keymaps = function()
-    --  See `:help vim.keymap.set()`
+    -- Quickix list
+    vim.keymap.set('n', 'qn', '<cmd>cnext<CR>', { desc = 'Next Quickfix list item' })
+    vim.keymap.set('n', 'qp', '<cmd>cprev<CR>', { desc = 'Previous Quickfix list item' })
+    vim.keymap.set('n', 'qo', '<cmd>copen<CR>', { desc = 'Open Quickfix list' })
+    vim.keymap.set('n', 'qc', '<cmd>cclose<CR>', { desc = 'Close Quickfix list' })
 
     -- Clear highlights on search when pressing <Esc> in normal mode
     --  See `:help hlsearch`
     vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
     -- Diagnostic keymaps
-    vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+    vim.keymap.set('n', '<leader>d', vim.diagnostic.setloclist, { desc = 'Open [D]iagnostic quickfix list' })
 
     -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
     -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
