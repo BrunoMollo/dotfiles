@@ -16,3 +16,5 @@ alias ci='zi'
 alias vim="nvim"
 alias cls="clear"
 alias t="cd /tmp"
+
+source $HOME/.keys 
