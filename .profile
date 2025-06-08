@@ -16,5 +16,6 @@ alias ci='zi'
 alias vim="nvim"
 alias cls="clear"
 alias t="cd /tmp"
+alias aws="aws --profile=bruno_mollo"
 
 source $HOME/.keys 
