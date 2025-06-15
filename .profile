@@ -18,4 +18,11 @@ alias cls="clear"
 alias t="cd /tmp"
 alias aws="aws --profile=bruno_mollo"
 
+# Comand to download a flag
+alias flag='curl -s https://flagcdn.com/en/codes.json \
+| jq -r "to_entries[] | \"\(.value) (\(.key))\"" \
+| fzf --prompt="País: " \
+| sed -E "s/.*\(([a-z]{2})\)/\1/" \
+| xargs -I {} curl -o {}.svg https://flagcdn.com/{}.svg'
+
 source $HOME/.keys 
