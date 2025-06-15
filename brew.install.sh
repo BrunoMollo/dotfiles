@@ -46,6 +46,17 @@ packages=(
 	btop
 	starship
 	tree
+
+	# yazi
+	yazi 
+	ffmpeg 
+	sevenzip 
+	jq 
+	poppler 
+	fd 
+	resvg 
+	imagemagick 
+	font-symbols-only-nerd-font
 )
 
 for pkg in "${packages[@]}"; do
