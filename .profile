@@ -17,7 +17,6 @@ alias ci='zi'
 alias vim="nvim"
 alias cls="clear"
 alias t="cd /tmp"
-alias aws="aws --profile=bruno_mollo"
 
 # Comand to download a flag
 alias flag='curl -s https://flagcdn.com/en/codes.json \
