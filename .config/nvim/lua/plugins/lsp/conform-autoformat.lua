@@ -32,6 +32,7 @@ return { -- Autoformat
     formatters_by_ft = {
       lua = { 'stylua' },
       blade = { 'blade-formatter' },
+      php = { 'php-cs-fixer' },
       javascript = { 'prettierd', 'prettier', stop_after_first = true },
       astro = { 'prettierd', 'prettier', stop_after_first = true },
       html = { 'prettierd', 'prettier', stop_after_first = true },

@@ -41,5 +41,13 @@ return {
 
     -- confirm on quit unsaved changes
     vim.o.confirm = false
+
+    vim.opt.swapfile = false
+
+    -- Always use spaces instead of tabs
+    vim.opt.expandtab = true
+    vim.opt.tabstop = 4 -- Display width of a tab
+    vim.opt.shiftwidth = 4 -- Indent size
+    vim.opt.softtabstop = 4 -- Makes <Tab>/<BS> feel like 4 spaces
   end,
 }
