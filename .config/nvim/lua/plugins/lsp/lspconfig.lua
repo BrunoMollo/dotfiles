@@ -29,6 +29,7 @@ return {
     vim.api.nvim_create_autocmd('LspAttach', {
       group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
       callback = function(event)
+        print 'lsp attach'
         -- In this case, we create a function that lets us more easily define mappings specific
         -- for LSP related items. It sets the mode, buffer and description for us each time.
         local map = function(keys, func, desc, mode)
@@ -40,7 +41,7 @@ return {
         map('lr', vim.lsp.buf.rename, 'Rename')
 
         -- Execute a code action, usually your cursor needs to be on top of an error
-        map('lca', vim.lsp.buf.code_action, 'Code Action', { 'n', 'x' })
+        map('ca', vim.lsp.buf.code_action, 'Code Action', { 'n', 'x' })
 
         -- Go to next diagnostic
         map('lj', vim.diagnostic.goto_next, 'Next Diagnostic')
