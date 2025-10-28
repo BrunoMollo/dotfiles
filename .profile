@@ -26,3 +26,8 @@ alias flag='curl -s https://flagcdn.com/en/codes.json \
 | xargs -I {} curl -o {}.svg https://flagcdn.com/{}.svg'
 
 source $HOME/.keys 
+
+
+if command -v ngrok &>/dev/null; then
+    eval "$(ngrok completion)"
+fi
