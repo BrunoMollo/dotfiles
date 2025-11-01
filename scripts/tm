@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+# List all tmux sessions and add an option for a new session
+SESSION=$(tmux list-sessions -F "#{session_name}" 2>/dev/null | \
+    { cat; echo "[NEW SESSION]"; } | \
+    fzf --prompt="Select tmux session: " \
+        --height=40% --reverse --ansi \
+        --expect=enter,ctrl-n)
+
+# If nothing was selected, exit
+if [[ -z "$SESSION" ]]; then
+    exit 0
+fi
+
+# Extract the key pressed and the selected session
+KEY=$(head -n1 <<< "$SESSION")
+SELECTED_SESSION=$(tail -n1 <<< "$SESSION")
+
+# Function to attach or switch depending if inside tmux
+attach_or_switch() {
+    local session="$1"
+    if [ -n "$TMUX" ]; then
+        # Already inside tmux: switch client
+        tmux switch-client -t "$session"
+    else
+        # Not inside tmux: attach normally
+        tmux attach-session -t "$session"
+    fi
+}
+
+# If user wants a new session
+if [[ "$SELECTED_SESSION" == "[NEW SESSION]" || "$KEY" == "ctrl-n" ]]; then
+    read -rp "Enter new tmux session name: " NEW_NAME
+    [[ -z "$NEW_NAME" ]] && echo "No name given. Exiting." && exit 1
+    if [ -n "$TMUX" ]; then
+        # Create new session but don't detach the current one
+        tmux new-session -d -s "$NEW_NAME"
+        tmux switch-client -t "$NEW_NAME"
+    else
+        tmux new-session -s "$NEW_NAME"
+    fi
+else
+    attach_or_switch "$SELECTED_SESSION"
+fi
