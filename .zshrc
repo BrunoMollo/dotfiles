@@ -1,5 +1,8 @@
 # .zshrc
 
+autoload -Uz compinit
+compinit
+
 source $HOME/.profile
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
