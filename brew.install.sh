@@ -57,6 +57,11 @@ packages=(
 	resvg 
 	imagemagick 
 	font-symbols-only-nerd-font
+
+    #docker
+    docker 
+    colima 
+    docker-compose
 )
 
 for pkg in "${packages[@]}"; do
