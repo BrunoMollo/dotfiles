@@ -34,6 +34,7 @@ return { -- Autoformat
       blade = { 'blade-formatter' },
       php = { 'php-cs-fixer' },
       javascript = { 'prettierd', 'prettier', stop_after_first = true },
+      svelte = { 'prettierd', 'prettier', stop_after_first = true },
       jsx = { 'prettierd', 'prettier', stop_after_first = true },
       typescript = { 'prettierd', 'prettier', stop_after_first = true },
       tsx = { 'prettierd', 'prettier', stop_after_first = true },
