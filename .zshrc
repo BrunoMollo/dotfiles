@@ -4,6 +4,8 @@ fpath=(~/.zsh/completions $fpath)
 autoload -Uz compinit
 compinit
 
+unsetopt correct_all
+
 source $HOME/.profile
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh

@@ -1,0 +1,16 @@
+{
+  "name": "Abrir repo en GitLab",
+  "url": "https://gitlab.com/syloper/{repo}",
+  "arguments": [
+    {
+      "name": "repo",
+      "placeholder": "Elegí un repo",
+      "choices": [
+        { "title": "Betfunnels Core", "value": "betfunnels-core" },
+        { "title": "Betfunnels Core", "value": "betfunnels-proxy" },
+        { "title": "Nasini Portal", "value": "nasini-portal-clientes" },
+        { "title": "Nasini SST", "value": "nasini-sst" }
+      ]
+    }
+  ]
+}

@@ -5,6 +5,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 export PATH="$HOME/scripts:$PATH"
+export PATH="$PATH:$(npm config get prefix)/bin"
 
 # Varibles
 export EDITOR="nvim"
