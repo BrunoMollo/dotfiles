@@ -1,6 +1,6 @@
-font-size = 19
+font-size = 28
 background-opacity = 1
 keybind= global:cmd+s=toggle_quick_terminal
-theme = Catppuccin Mocha
+theme = Catppuccin Macchiato
 window-decoration = true 
 
