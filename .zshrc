@@ -4,6 +4,7 @@ fpath=(~/.zsh/completions $fpath)
 autoload -Uz compinit
 compinit
 
+unsetopt correct
 unsetopt correct_all
 
 source $HOME/.profile
