@@ -25,4 +25,3 @@ else
 fi
 
 open -a "$app"
-printf 'Abriendo %s · modo %s\n' "$app" "$mode"
