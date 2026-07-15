@@ -24,6 +24,7 @@ packages=(
 
 	# Dev tools
 	neovim
+	tree-sitter-cli
 	tmux
 	ripgrep
 	fzf
