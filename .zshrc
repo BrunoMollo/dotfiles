@@ -54,3 +54,10 @@ alias claude="/Users/bruno/.claude/local/claude"
 alias gcd='echo "$(git gtr list --porcelain | fzf | awk '\''{print $1}'\'')" && pwd'
 
 eval "$(fnm env)"
+
+# Add JBang to environment
+alias j!=jbang
+export PATH="$HOME/.jbang/bin:$PATH"
+
+# Added by cua-driver-rs installer — see https://github.com/trycua/cua
+export PATH="/Users/bruno/.local/bin:$PATH"

@@ -29,6 +29,8 @@ alias flag='curl -s https://flagcdn.com/en/codes.json \
 source $HOME/.keys 
 
 
+eval "$(fnm env --use-on-cd --shell zsh)"
+
 if command -v ngrok &>/dev/null; then
     eval "$(ngrok completion)"
 fi
