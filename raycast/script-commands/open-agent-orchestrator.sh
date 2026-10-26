@@ -8,7 +8,7 @@
 # Optional parameters:
 # @raycast.icon 🤖
 # @raycast.packageName Modos
-# @raycast.description Abre Cursor en Trabajo o T3 Code en Personal
+# @raycast.description Abre Cursor en Trabajo o T3 Code en Personal y Java
 
 set -euo pipefail
 

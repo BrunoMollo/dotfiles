@@ -8,7 +8,7 @@
 # Optional parameters:
 # @raycast.icon 💬
 # @raycast.packageName Modos
-# @raycast.description Abre Slack en Trabajo o Legcord en Personal
+# @raycast.description Abre Slack en Trabajo o Legcord en Personal y Java
 
 set -euo pipefail
 
