@@ -1,0 +1,7 @@
+WRN 2026-09-23T11:52:44.465 ?.45958    server_start:197: Failed to start server: operation not permitted: /var/folders/ft/qqpymwds745cwtmvl0d_vssh0000gn/T/nvim.bruno/0B03xL/nvim.45958.0
+WRN 2026-09-23T11:53:08.388 ?.48202    server_start:197: Failed to start server: operation not permitted: /var/folders/ft/qqpymwds745cwtmvl0d_vssh0000gn/T/nvim.bruno/VZx7Xq/nvim.48202.0
+WRN 2026-09-23T11:53:34.741 ?.48317    server_start:197: Failed to start server: operation not permitted: /var/folders/ft/qqpymwds745cwtmvl0d_vssh0000gn/T/nvim.bruno/WJiiWb/nvim.48317.0
+WRN 2026-09-23T11:55:04.960 ?.53073    server_start:197: Failed to start server: operation not permitted: /var/folders/ft/qqpymwds745cwtmvl0d_vssh0000gn/T/nvim.bruno/e7ayOD/nvim.53073.0
+WRN 2026-09-23T11:55:12.531 ?.53113    server_start:197: Failed to start server: operation not permitted: /var/folders/ft/qqpymwds745cwtmvl0d_vssh0000gn/T/nvim.bruno/vzPnSG/nvim.53113.0
+WRN 2026-09-23T11:55:20.668 ?.53213    server_start:197: Failed to start server: operation not permitted: /var/folders/ft/qqpymwds745cwtmvl0d_vssh0000gn/T/nvim.bruno/AmZE55/nvim.53213.0
+WRN 2026-09-23T11:55:41.386 ?.53352    server_start:197: Failed to start server: operation not permitted: /var/folders/ft/qqpymwds745cwtmvl0d_vssh0000gn/T/nvim.bruno/D4A0vN/nvim.53352.0

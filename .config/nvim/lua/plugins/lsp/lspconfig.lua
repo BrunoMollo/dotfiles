@@ -22,6 +22,14 @@ return {
           name = 'laravel-ls',
           cmd = { 'laravel-ls' },
           root_dir = vim.fn.getcwd(),
+          on_init = function(client)
+            -- laravel-ls v0.0.6 incorrectly reports this capability as `true`.
+            -- Neovim 0.12 expects the LSP-spec object and otherwise errors when
+            -- refreshing diagnostics after a buffer change or save.
+            if type(client.server_capabilities.diagnosticProvider) ~= 'table' then
+              client.server_capabilities.diagnosticProvider = nil
+            end
+          end,
         }
       end,
     })
