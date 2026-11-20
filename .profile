@@ -19,6 +19,10 @@ alias vim="nvim"
 alias cls="clear"
 alias t="mkdir -p /tmp/tmp && cd /tmp/tmp/"
 
+alias op-nasini-dev="op run --environment blpiylpf4eungdcnqocpw6a7gy"
+alias op-nasini-prd="op run --environment 4nihyv74qvalc2cbb4prrh4l6e"
+alias op-bet="op run --environment oaqkp4qmhjha2a62j6hcypxshq"
+
 # Comand to download a flag
 alias flag='curl -s https://flagcdn.com/en/codes.json \
 | jq -r "to_entries[] | \"\(.value) (\(.key))\"" \
@@ -34,3 +38,7 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 if command -v ngrok &>/dev/null; then
     eval "$(ngrok completion)"
 fi
+. "$HOME/.cargo/env"
+
+# Vite+ bin (https://viteplus.dev)
+. "/Users/bruno/.config/vite-plus/env"

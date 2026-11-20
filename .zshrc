@@ -44,9 +44,11 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# Muestra la ruta desde el directorio personal (~) en el prompt.
-PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) %{$fg[cyan]%}%~%{$reset_color%}"
+# Muestra la ruta y la rama de Git en la primera línea, y el cursor en la segunda.
+PROMPT="%{$fg[cyan]%}%~%{$reset_color%}"
 PROMPT+=' $(git_prompt_info)'
+PROMPT+=$'\n'
+PROMPT+="%(?:%{$fg_bold[green]%}%1{➤%} :%{$fg_bold[red]%}%1{➤%} )%{$reset_color%}"
 
 
 alias claude="/Users/bruno/.claude/local/claude"
@@ -61,3 +63,6 @@ export PATH="$HOME/.jbang/bin:$PATH"
 
 # Added by cua-driver-rs installer — see https://github.com/trycua/cua
 export PATH="/Users/bruno/.local/bin:$PATH"
+
+# Vite+ bin (https://viteplus.dev)
+. "/Users/bruno/.config/vite-plus/env"
