@@ -19,9 +19,7 @@ if [[ -f "$state_file" ]]; then
 fi
 
 if [[ "$mode" == "Trabajo" ]]; then
-  app="Cursor"
-else
-  app="T3 Code (Alpha)"
+  app="T3 Code (Beta)"
 fi
 
 open -a "$app"
