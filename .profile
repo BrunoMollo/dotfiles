@@ -42,3 +42,7 @@ fi
 
 # Vite+ bin (https://viteplus.dev)
 . "/Users/bruno/.config/vite-plus/env"
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/bruno/.local/bin:$PATH"
