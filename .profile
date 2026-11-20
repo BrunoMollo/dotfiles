@@ -46,3 +46,5 @@ fi
 
 # Added by Antigravity CLI installer
 export PATH="/Users/bruno/.local/bin:$PATH"
+
+alias gh-personal='GH_TOKEN=$(gh auth token --user BrunoMollo) gh'
